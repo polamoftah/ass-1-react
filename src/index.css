@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.active{
+background-color:teal ;
+height: fit-content;
+width: 10px;
+color: white;
+border-radius: 10px;
+}
+.container{
+    @apply w-[80%] mx-auto
+}
