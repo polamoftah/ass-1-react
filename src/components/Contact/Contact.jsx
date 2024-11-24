@@ -21,7 +21,7 @@ export default function Contact() {
             <br />
             <input className='w-1/2 py-5 border-b-2 border-gray-400 focus:outline-none  m-3' type="text"placeholder='userpassword' />
 <br />
-<div className='flex justify-start ml-[450px] text-white mt-7'><button className='bg-teal-400 w-40 h-11 rounded-2xl '>send message</button></div>
+<div className='flex justify-start ml-[450px] text-white mt-7'><button className='bg-teal-400 w-40 h-11 rounded-2xl '>send</button></div>
            
         </div>
         </div>

@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { Modal } from "flowbite-react";
-
+import pic from '../../assets/avataaars.svg'; // Ensure the path is correct
+import pic2 from '../../assets/poert1.png';
+import pic3 from '../../assets/port2.png';
+import pic4 from '../../assets/port3.png';
 export default function Portfolio() {
   const [openModal, setOpenModal] = useState(null);  
-  const [images, setimages] = useState([
-    { Path: "poert1.png", id: 1 },  
-    { Path: "port2.png", id: 2 },
-    { Path: "port3.png", id: 3 },
-    { Path: "poert1.png", id: 4 },
-    { Path: "port2.png", id: 5 },
-    { Path: "port3.png", id: 6 },
+  const [images, setImages] = useState([
+    { Path: pic2, id: 1 },  // Use 'pic' here
+    { Path: pic2, id: 2 },
+    { Path: pic3, id: 3 },
+    { Path: pic4, id: 4 },
+    { Path: pic4, id: 5 },
+    { Path: pic3, id: 6 },
   ]);
 
   return (
@@ -44,7 +47,7 @@ export default function Portfolio() {
             show={openModal === elem.id}  
             onClose={() => setOpenModal(null)}  
           >
-            <img src={elem.Path}  className="w-full h-auto" />
+            <img src={elem.Path} className="w-full h-auto" />
           </Modal>
         ))}
       </div>
